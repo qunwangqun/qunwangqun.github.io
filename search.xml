@@ -22,7 +22,27 @@
   <entry>
     <title>test</title>
     <url>/2020/03/17/test/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>ddd</p>
+<p>d</p>
+<p>d</p>
+<a id="more"></a>
+
+<p>d</p>
+<p>d</p>
+<p>d</p>
+<p>d</p>
+<p>d</p>
+<p>d</p>
+<p>d</p>
+<p>d</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>多线程</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
