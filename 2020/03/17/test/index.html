@@ -473,7 +473,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1584525301&di=5ff00c2113e347243c74076a8ac4a16c&src=http://a3.att.hudong.com/68/61/300000839764127060614318218_950.jpg" rel="gallery_ck81qtib30000qonu8gbk0tn5"
+                 href="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1584525301&di=5ff00c2113e347243c74076a8ac4a16c&src=http://a3.att.hudong.com/68/61/300000839764127060614318218_950.jpg" rel="gallery_ck81ud9v30002kcnu2cpl8m8j"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1584525301&di=5ff00c2113e347243c74076a8ac4a16c&src=http://a3.att.hudong.com/68/61/300000839764127060614318218_950.jpg" itemprop="contentUrl"/>
               </a>
@@ -511,6 +511,17 @@
     
 
     
+	
+	
+	<div>
+	  
+		﻿<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	  
+	</div>
 
     <footer class="post-footer">
       
@@ -720,7 +731,26 @@
 
 
 
-
+<div>
+<span id = "timeDate"></span>
+<span id = "times"></span>
+</div>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("2020/03/20 12:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
 
         
 <div class="busuanzi-count">
@@ -1379,5 +1409,9 @@
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":140,"height":240},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
+
+
+<script type="text/javascript" src="/js/src/click-love.js"></script>
+<script type="text/javascript" src="/js/src/sidebar-poc.js"></script>
