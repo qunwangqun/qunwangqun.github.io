@@ -1924,7 +1924,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff128a;
+  background: #6c24ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3168,7 +3168,7 @@ header.post-header {
 }
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("/images/background.jpg");
+    background-image: url("http://47.94.173.165/file/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
