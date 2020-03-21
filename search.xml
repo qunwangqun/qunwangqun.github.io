@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test2</title>
-    <url>/2020/03/21/test2/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>JAVA多线程（一）</title>
-    <url>/2020/03/18/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
+    <url>/2020/03/21/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="Thread类API"><a href="#Thread类API" class="headerlink" title="Thread类API"></a>Thread类API</h1><h2 id="使用多线程"><a href="#使用多线程" class="headerlink" title="使用多线程"></a>使用多线程</h2><ul>
 <li>实现多线程编程的方式主要有两种：一种是继承Thread类，另一种是实现Runnable接口。</li>
 </ul>
@@ -52,7 +47,8 @@
 <ul>
 <li>测试当前对象是否已经是<strong>中断状态</strong>，<u>但不清除标志</u>。</li>
 </ul>
-<h3 id="停止线程—异常法"><a href="#停止线程—异常法" class="headerlink" title="停止线程—异常法"></a>停止线程—异常法</h3><p><img src="/qunwangqun/qunwangqun.github/image-20200321184903490.png" alt="image-20200321184903490"></p>
+<h3 id="停止线程—异常法"><a href="#停止线程—异常法" class="headerlink" title="停止线程—异常法"></a>停止线程—异常法</h3><img src="/qunwangqun/qunwangqun.github/03/21/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20200321184903490.png" class title="pic">
+
 <ol>
 <li><p>interrupt()方法对当前线程做中断标记。</p>
 </li>
@@ -66,9 +62,11 @@
 <li>也可使用<strong>return</strong>;结束当前方法，但使用“抛异常”实现的线程停止，可在catch块中对异常信息进行相关处理。</li>
 </ul>
 <h3 id="在沉睡中停止"><a href="#在沉睡中停止" class="headerlink" title="在沉睡中停止"></a>在沉睡中停止</h3><p>如果在sleep状态下停止某一线程，会进入catch语句，并且清除停止状态值使之变为false。</p>
-<p><img src="/qunwangqun/qunwangqun.github/image-20200321185004965.png" alt="image-20200321185004965"></p>
+<img src="/qunwangqun/qunwangqun.github/03/21/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20200321185004965.png" class title="pic">
+
 <h3 id="暴力停止"><a href="#暴力停止" class="headerlink" title="暴力停止"></a>暴力停止</h3><p><del>stop(</del>)方法，已经作废，若强制让线程停止则可能一些清理性的工作得不到完成。另一情况对锁定的对象进行了解锁，导致数据得不到同步处理，出现数据不一致。</p>
-<p><img src="/qunwangqun/qunwangqun.github/image-20200321190131678.png" alt="image-20200321190131678"></p>
+<img src="/qunwangqun/qunwangqun.github/03/21/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20200321190131678.png" class title="pic">
+
 <h2 id="暂停线程"><a href="#暂停线程" class="headerlink" title="暂停线程"></a>暂停线程</h2><h3 id="suspend-方法"><a href="#suspend-方法" class="headerlink" title="suspend()方法"></a>suspend()方法</h3><blockquote>
 <p>  suspend [səˈspend] v.悬; 挂; 吊; 暂停; 中止; 使暂停发挥作用(或使用等); 延缓; 暂缓; 推迟;</p>
 </blockquote>
@@ -82,7 +80,8 @@
 
 </li>
 </ul>
-<p><img src="/qunwangqun/qunwangqun.github/image-20200321192343572.png" alt="image-20200321192343572"></p>
+<img src="/qunwangqun/qunwangqun.github/03/21/java%E5%A4%9A%E7%BA%BF%E7%A8%8B/image-20200321192343572.png" class title="pic">
+
 <p>thread–0占用println()方法，同步锁未释放，main方法中<code>System.out.println(&quot;main--end&quot;)</code>就无法执行。</p>
 <h3 id="resume-方法"><a href="#resume-方法" class="headerlink" title="resume()方法"></a>resume()方法</h3><blockquote>
 <p>  resume [rɪˈzjuːm] 重新开始; (中断后) 继续; 恢复席位 / 地位 / 职位;</p>
@@ -118,9 +117,9 @@
 </blockquote>
 ]]></content>
       <categories>
+        <category>笔记</category>
         <category>java</category>
         <category>多线程</category>
-        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>java</tag>
@@ -128,6 +127,11 @@
         <tag>api</tag>
         <tag>Thread</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <url>/2020/03/21/test2/</url>
+    <content><![CDATA[<img src="/qunwangqun/qunwangqun.github/03/21/test2/a90829bb797dfc4c12deb4b4f1f9057.png" class title="test">]]></content>
   </entry>
   <entry>
     <title>java</title>
@@ -164,6 +168,8 @@
 ]]></content>
       <categories>
         <category>笔记</category>
+        <category>java</category>
+        <category>spring boot</category>
       </categories>
       <tags>
         <tag>java</tag>
